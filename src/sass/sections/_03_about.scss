@@ -1,0 +1,116 @@
+.about-section {
+  height: 588px;
+  padding-top: 80px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    height: 1048px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    padding-top: 1px;
+    height: 974px;
+  }
+}
+
+.about {
+  width: 1200px;
+  height: 408px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 100px auto;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 437px;
+    height: 868px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 300px;
+    height: 890px;
+    margin: 0 auto;
+  }
+}
+
+.about-content {
+  width: 380px;
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin: 0;
+    margin-top: 32px;
+    width: 300px;
+    height: 494px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.about-img {
+  width: 300px;
+  height: 408px;
+  margin-right: 120px;
+  margin-left: 175px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin: 0;
+    margin: 101px 68px 0 68px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin: 116px 20px 0 20px;
+
+    width: 260px;
+    height: 353.6px;
+  }
+}
+
+.about-title {
+  width: 370px;
+  height: 90px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color_dark_5;
+  margin-top: 14px;
+  margin-bottom: 27px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin: 0;
+    margin-top: 8px;
+    width: 280px;
+    height: 64px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+}
+
+.about-p {
+  width: 430px;
+  height: 96px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color_dark_4;
+  margin-bottom: 25px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    // margin: 0;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin: 0;
+    width: 270px;
+    height: 144px;
+
+    font-size: 15px;
+    line-height: 160%;
+    margin-bottom: 21px;
+    text-align: justify;
+  }
+}

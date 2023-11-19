@@ -1,0 +1,23 @@
+@import "base/normalize";
+
+@import "base/colors";
+
+@import "components/pet-card";
+@import "components/modal";
+
+@import "sections/wrapper";
+
+@import "sections/01_header";
+@import "sections/02_notonly";
+@import "sections/03_about";
+@import "sections/04_pets";
+@import "sections/05_help";
+@import "sections/06_donation";
+@import "sections/07_footer";
+
+@import "sections/our_pets_nav";
+@import "sections/our_pets_main";
+
+@import "components/carusel-main";
+@import "components/burger-settings";
+@import "components/pagination";

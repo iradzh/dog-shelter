@@ -1,0 +1,205 @@
+.our-pets_section {
+  height: 1342px;
+  background-color: #f6f6f6;
+
+  @media (min-width: 768px) and (max-width: $desktop-breackpoint) {
+    height: 1733px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    height: 1649px;
+  }
+}
+
+.our-pets {
+  width: 1200px;
+  height: 1162px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) and (max-width: $desktop-breackpoint) {
+    width: 708px;
+    height: 1603px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 300px;
+    height: 1565px;
+  }
+}
+
+.our-pets-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: 768px) and (max-width: $desktop-breackpoint) {
+    width: 580px;
+    margin-top: -27px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin: 0 auto;
+    padding: auto;
+    align-items: center;
+    padding-left: 15px;
+  }
+}
+
+.our-pets .pet-card {
+  margin-bottom: 30px;
+  @media (min-width: 768px) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+  }
+}
+
+.our-pets .pet-card {
+  margin-bottom: 30px;
+}
+
+// TYPO
+.our-pets-title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color_dark_5;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 300px;
+    height: 64px;
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+}
+
+.our-buttons-box {
+  display: flex;
+  width: 340px;
+  height: 52px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  @media (min-width: 768px) and (max-width: $desktop-breackpoint) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 300px;
+    height: 52px;
+    margin-top: 12px;
+  }
+}
+
+.our-btn {
+  background-color: #f6f6f6;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+  }
+}
+
+.our-btn-inactive {
+  border: 2px solid $color_dark_1;
+  color: $color_dark_1;
+  cursor: auto !important;
+  box-shadow: none !important;
+}
+
+.our-btn-selected {
+  border: 2px solid $color_primary;
+  color: $color_dark_2;
+  background-color: $color_primary;
+
+  &:hover {
+    border-color: $color_primary_active;
+    background-color: $color_primary_active;
+  }
+}
+
+.our-btn-active {
+  border: 2px solid $color_primary;
+  color: $color_dark_2;
+
+  &:hover {
+    border-color: $color_primary_active;
+    background-color: $color_primary_active;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: $desktop-breackpoint) {
+  .op-pet-card:nth-of-type(4) {
+    display: flex;
+  }
+  .op-pet-card:nth-of-type(7) {
+    display: none;
+  }
+  .op-pet-card:nth-of-type(8) {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+  .op-pet-card {
+    display: none;
+  }
+  .op-pet-card:nth-of-type(1) {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .op-pet-card:nth-of-type(2) {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .op-pet-card:nth-of-type(3) {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.our-btn-selected:hover {
+  background-color: $color_primary_active;
+  border-color: $color_primary_active;
+}
+
+.our-btn-active:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  background-color: $color_primary_active;
+  border-color: $color_primary_active;
+}

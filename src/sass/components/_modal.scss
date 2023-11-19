@@ -1,0 +1,220 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+  }
+}
+.close-modal-btn {
+  position: absolute;
+  top: -50px;
+  right: -45px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color_primary;
+  border-radius: 100px;
+  background-color: transparent;
+  transition: all ease-in-out 0.5s;
+  &:hover {
+    cursor: pointer;
+    background-color: $color_primary;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    top: -52px;
+    right: -32px;
+  }
+}
+
+.modal {
+  position: relative;
+
+  width: 900px;
+  height: 500px;
+  background: $color-light_3;
+  border-radius: 9px;
+  display: flex;
+  justify-content: flex-start;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 630px;
+    height: 350px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 240px;
+    // height: 341px;
+    height: fit-content;
+  }
+}
+
+.modal-content {
+  width: 351px;
+  height: 362px;
+  padding-left: 31px;
+  padding-top: 2px;
+  margin: 50px 20px 88px 0;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 260px;
+    height: 303px;
+    margin: 10px 9px 0 0;
+    padding-left: 11px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 220px;
+    // height: 321px;
+    height: fit-content;
+    margin: 1px 1px;
+    padding: 1px 1px;
+  }
+}
+
+.modal-img {
+  width: 500px;
+  height: 500px;
+  border-radius: 9px;
+  padding-right: 22px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 350px;
+    height: 350px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+}
+
+.modal-title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 23px;
+  }
+}
+.modal-subtitle {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-top: 10px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    text-align: center;
+  }
+}
+
+.modal-p {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-top: 40px;
+  width: 350px;
+  height: 102px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin-top: 20px;
+    font-size: 13px;
+    width: 260px;
+    height: 98px;
+    text-align: justify;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    font-size: 13px;
+    line-height: 110%;
+    width: 220px;
+    height: fit-content;
+    margin-top: 20px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+  }
+}
+.modal-highlight {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+  }
+}
+
+.modal-ul {
+  padding-left: 15px;
+  margin-top: 40px;
+  list-style: none;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    padding-left: 23px;
+    margin-top: 13px;
+  }
+}
+
+ul li::before {
+  color: $color_primary;
+  content: "\2022";
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.modal-li {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-bottom: 11px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin-bottom: 6px;
+  }
+}
+
+.material-icons {
+  color: #292929;
+  padding-top: 5px;
+}

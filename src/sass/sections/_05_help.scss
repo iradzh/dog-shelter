@@ -1,0 +1,127 @@
+.help-section {
+  height: 611px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    height: 779px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    height: 745px;
+  }
+}
+
+.help {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    justify-content: flex-start;
+    width: 630px;
+    height: 599px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    justify-content: flex-start;
+    height: 745px;
+    width: 290px;
+  }
+}
+
+.help-title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color_dark_5;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 319px;
+    height: 90px;
+    margin: 80px auto 60px auto;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 230px;
+    height: 64px;
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 41px;
+    margin-bottom: 43px;
+  }
+}
+
+// elements
+
+.help-options-box {
+  width: 1026px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 116px;
+  row-gap: 55px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 630px;
+    justify-content: space-between;
+    column-gap: 46px;
+    row-gap: 55px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 290px;
+    height: 555px;
+    justify-content: space-between;
+    column-gap: 28px;
+    row-gap: 29px;
+  }
+}
+
+.help-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 113px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 170px;
+    height: 113px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 130px;
+    height: 87px;
+  }
+}
+
+.help-el-img {
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.help-element-title {
+  height: 23px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color_dark_5;
+  margin-top: 30px;
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    font-size: 15px;
+    line-height: 110%;
+    margin-top: 22px;
+  }
+}

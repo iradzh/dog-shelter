@@ -1,0 +1,138 @@
+.notonly {
+  display: flex;
+  width: $laptop-content-width;
+  flex-direction: row;
+ 
+  height: 728px;
+  margin: auto;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    flex-direction: column;
+    align-items: center;
+    width: $tablet-content-width;
+    height: 1015px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 673px;
+  }
+}
+
+.notonly-content {
+  width: 460px;
+  height: 322px;
+  margin-top: 163px;
+  margin-right: 40px;
+
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 460px;
+    height: 322px;
+    margin: 0;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 300px;
+    height: 296px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.notonly-img {
+  width: 698px;
+  height: 728px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 569px;
+    height: 593px;
+    margin-top: 102px;
+    margin-left: 140px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    height: 272px;
+    width: 260px;
+    margin-top: 105px;
+    margin-left: 42px;
+  }
+
+}
+
+.notonly-title {
+  width: 310px;
+  height: 114px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: $color-light;
+  margin-bottom: 42px;
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 250px;
+    height: 64px;
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+}
+
+.notonly-p {
+  width: 460px;
+  height: 72px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: $color_dark_1;
+  margin-bottom: 56px;
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin: 0;
+    width: 300px;
+    height: 96px;
+    text-align: center;
+  }
+
+}
+
+.notonly-btn {
+  background-color: $color_primary;
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+  border: none;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color_dark_2;
+  padding: 15px 45px;
+  margin-top: 25px;
+  transition: all ease-in-out 0.7s;
+  &:hover {
+    cursor: pointer;
+    background-color: $color_primary_active;
+    transition: all ease-in-out 0.7s;
+  }
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin: 0 124px;
+  }
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    margin: 0;
+    margin-top: 42px;
+
+    padding: 15px 40px;
+    text-align: center;
+  }
+}
+

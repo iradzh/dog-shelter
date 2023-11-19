@@ -1,0 +1,31 @@
+$color_primary: #f1cdb3;
+$color_primary_active: #fddcc4;
+$color-light: #ffffff;
+$color-light_2: #f6f6f6;
+$color-light_3: #fafafa;
+$color_dark_1: #cdcdcd;
+$color_dark_2: #292929;
+$color_dark_4: #4c4c4c;
+$color_dark_5: #545454;
+
+$laptop-width: 1280px;
+$laptop-content-width: 1200px;
+$desktop-breackpoint: 1279px;
+
+$tablet-width: 770px;
+$tablet-content-width: 708px;
+$tablet-breackpoint: 767px;
+
+$mobile-width: 320px;
+$mobile-content-width: 280px;
+$mobile-breackpoint: 318px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+}
+
+@media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+}

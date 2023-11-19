@@ -1,0 +1,215 @@
+.donation-section {
+  height: 462px;
+  background-color: #f6f6f6;
+
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    height: 783px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    height: 542.2px;
+  }
+
+}
+
+.donation {
+  width: 915px;
+  height: 282px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-top: 80px;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 1px;
+    align-items: center;
+    width: 505px;
+    height: 573px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 1px;
+    align-items: center;
+    width: 300px;
+    height: 573px;
+  }
+
+}
+
+.donation-img {
+  margin-top: 12px;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 260px;
+    height: 135.2px;
+    margin-top: 43px;
+  }
+
+}
+
+.donation-content {
+  margin-left: 30px;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin: 0;
+    margin-top: 80px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 300px;
+    margin: 0;
+    margin-top: 42px;
+  }
+
+}
+
+.donation-title {
+  width: 300px;
+  height: 90px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color_dark_5;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin: 0;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 213px;
+    height: 64px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+  }
+
+}
+
+.donation-subtitle {
+  width: 310px;
+  height: 17px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color_dark_5;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin: 0;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 279px;
+    height: 24px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin: 19px auto 0 auto;
+  }
+
+}
+
+.donation-card {
+  display: flex;
+  padding: 10px 15px;
+  gap: 10px;
+  width: 349px;
+  height: 43px;
+  background: $color_primary;
+  border-radius: 9px;
+  margin-bottom: 20px;
+   transition: all ease-in-out 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color_primary_active;
+    transition: all ease-in-out 0.5s;
+  }
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    margin: 0;
+    margin-top: 17px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    height: 43px;
+    width: 281px;
+    margin: 20px auto 0 auto;
+  }
+
+}
+
+.card-details {
+  height: 23px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color_dark_5;
+  margin-left: 4px;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 206px;
+    height: 17px;
+    font-size: 15px;
+    line-height: 110%;
+    margin-top: 4px;
+  }
+
+}
+
+.card-img {
+  width: 30px;
+  height: 23px;
+}
+
+.donation-description {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+  transition: all ease-in-out 0.5s;
+
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 380px;
+    height: 72px;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 280px;
+    height: 90px;
+    text-align: justify;
+
+    margin: 19px auto 0 auto;
+  }
+
+  
+}
+
+

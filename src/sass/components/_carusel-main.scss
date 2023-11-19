@@ -1,0 +1,151 @@
+.arr-button-div-right,
+.arr-button-div-left {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color_primary;
+  border-radius: 100px;
+  padding: 15px;
+  transition: all ease-in-out 0.5s;
+  &:hover {
+    cursor: pointer;
+    background-color: $color_primary;
+  }
+}
+.arr-button-div-right {
+  top: -243px;
+  left: 575px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    top: -243px;
+    left: 328px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    top: 19px;
+    left: 68px;
+  }
+}
+.arr-button-div-left {
+  top: -296px;
+  left: -574px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    top: -296px;
+    left: -330px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    top: -34px;
+    left: -68px;
+  }
+}
+
+.carousel,
+.item-left,
+.item-active,
+.item-right {
+  display: flex;
+  justify-content: center;
+}
+.item-left,
+.item-active,
+.item-right {
+  width: 990px;
+  height: 435px;
+  gap: 90px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 580px;
+    gap: 40px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 270px;
+  }
+}
+.carousel-wrapper {
+  overflow: hidden;
+  width: 990px;
+  height: 435px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+    width: 580px;
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+    width: 270px;
+  }
+}
+
+.carousel {
+  position: relative;
+  left: 1px;
+  @media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  }
+
+  @media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+  }
+}
+
+@keyframes move-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -990px;
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: 990px;
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+@media (min-width: $tablet-breackpoint) and (max-width: $desktop-breackpoint) {
+  @keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -580px;
+    }
+  }
+  @keyframes move-left {
+    from {
+      left: 0;
+    }
+    to {
+      left: 580px;
+    }
+  }
+}
+
+@media (min-width: $mobile-breackpoint) and (max-width: $tablet-breackpoint) {
+  @keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -270px;
+    }
+  }
+  @keyframes move-left {
+    from {
+      left: 0;
+    }
+    to {
+      left: 270px;
+    }
+  }
+}
